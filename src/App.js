@@ -52,7 +52,7 @@ function App() {
       .catch((err) => {
         console.log(err);
       });
-  }, [pageCount, queryString, paginationString, paginationKeyword]);
+  }, [pageCount, queryString, paginationString, paginationKeyword,userName]);
 
   useEffect(() => {
     fetchData();
