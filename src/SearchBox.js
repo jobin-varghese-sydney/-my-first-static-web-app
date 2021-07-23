@@ -1,16 +1,3 @@
-{/* <SearchBox
-            totalCount={totalCount}
-            pageCount={pageCount}
-            queryString={queryString}
-
-            onTotalChange={(myNumber) => {
-            setPageCount(myNumber);
-            }}
-            onQueryChange={(myString) => {
-            setQueryString(myString);
-            }} */}
-
-
 const SearchBox = ({
     totalCount, pageCount, queryString, onTotalChange, onQueryChange
 }) => {
@@ -37,8 +24,6 @@ const SearchBox = ({
 
 
     );
-
-
 
 };
 

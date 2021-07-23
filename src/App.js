@@ -6,7 +6,7 @@ import SearchBox from "./SearchBox";
 import NavButtons from "./NavButtons";
 
 function App() {
-  let [vieweruser, setVieweruser] = useState("");
+ 
   let [userName, setUserName] = useState("");
   let [repoList, setRepoList] = useState(null);
   let [pageCount, setPageCount] = useState(10);
@@ -33,15 +33,13 @@ function App() {
     })
       .then((response) => response.json())
       .then((data) => {
-        const viewer = data.data.viewer;
+        
         const repos = data.data.search.edges;
         const total = data.data.search.repositoryCount;
         const start = data.data.search.pageInfo?.startCursor;
         const end = data.data.search.pageInfo?.endCursor;
         const next = data.data.search.pageInfo?.hasNextPage;
-        const prev = data.data.search.pageInfo?.hasPreviousPage;
-
-        
+        const prev = data.data.search.pageInfo?.hasPreviousPage;       
       
         setRepoList(repos);
         setTotalCount(total);
