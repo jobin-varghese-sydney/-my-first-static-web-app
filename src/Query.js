@@ -5,7 +5,7 @@ const githubQuery = (
   paginationString,
   userName
 ) => {
-  console.log(userName);
+   
   return {
   
     query: `

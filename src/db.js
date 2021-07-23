@@ -3,7 +3,7 @@ const github={
 username: "jobin-varghese-sydney",
 headers:{
     "Content-Type":"application/json",
-    Authorization: "bearer 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"
+    Authorization: "bearer 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"
 }
 
 }
